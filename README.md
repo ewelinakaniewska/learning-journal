@@ -3,7 +3,7 @@
 A personal learning journal website built as part of the Frontend Developer path / Bootcamp. This project documents articles, thoughts, and progress through clean and responsive web design.
 
 ## Live Demo
-[https://roaring-pie-292ba1.netlify.app/aboutme](https://roaring-pie-292ba1.netlify.app/)
+[https://roaring-pie-292ba1.netlify.app](https://roaring-pie-292ba1.netlify.app/)
 
 ## Built With
 * **HTML5** (Semantic markup)
