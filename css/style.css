@@ -53,8 +53,8 @@ li:hover{
 }
 
 .hero {
-    background-image: url('images/article-image-hero.png');
     background-color: #371e11;
+    background-image: url('images/article-image-hero.png');
     min-height: 293px;
     background-size: cover;
     color: white;
