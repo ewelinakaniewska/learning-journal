@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    
+}
+header{
+  display: flex;
+  align-items: center; 
+  padding: 1.25em;
+  gap:0.25em ;
+  background-color: #fff;
+}
+h1{
+    margin: 0;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+nav {
+    margin-left: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+li{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li:hover{
+    color:#444;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url('images/article-image-hero.png');
+    min-height: 293px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.25em 1.5em;
+}
+h2 {
+    margin:0;
+    font-size: 2rem;
+}
+.center {
+    text-align: center;
+}
+.hero p{
+    margin-bottom: 0;
+}
+.hero .date, .featuring-article-date {
+    font-size: .75em;
+    margin-bottom: 1em;
+}
+.content {
+    padding: 1.5em 1.2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+.content img, .featuring-article img {
+    width: 100%;
+}
+
+.date {
+    font-size: 0.875em;
+    margin-top: 0.65em;
+}
+.article-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+.article-content {
+    line-height: 1.25em;
+    color: #505050;
+}
+article {
+    cursor: pointer;    
+}
+button {
+    background-color: #fff;
+    border: none;
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #202020;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 3em 0;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    color: #ECECEC;
+    font-weight: bold;
+    font-size: 0.75rem;
+    
+}
+footer span {
+    margin-top: .3em;
+    color: #D7D7D7;
+    font-size: 0.75rem;
+}
+
+.featuring-article {
+    padding: 1.5em 1.2em;
+}
+.featuring-article-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.featuring-article-content {
+    font-size: 1rem;
+}
+.featuring-article-heading {
+    font-weight: bold;
+}
+.featuring-article p {
+    color: #151515;
+    
+}
+.featuring-article img {
+    border-radius: 3px;
+}
+.featuring-article {
+    cursor: auto;
+}
+.aboutme {
+        padding: 1.5em 1.2em;
+
+}
+.aboutme p:first-of-type {
+    margin-bottom: 2.5em;
+}
+@media (min-width:768px) {
+    .hero {
+        min-height: 488px;
+        padding: 4em;
+    }
+    .hero .date {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+    li {
+        font-size: 1rem;
+    }
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:2em;
+        padding: 3em;
+    }
+    .content button {
+        grid-column: span 3;
+    }
+    .featuring-article {
+        padding: 3em;
+    }
+    .featuring-article p {
+        width: 85%;
+        margin: 1.5em auto;
+    }
+
+    .featuring-article-content {
+        font-size: 1.125rem;
+    }
+    .featuring-article-heading {
+        font-size: 1.5rem;
+    }
+    .featuring-article .featuring-article-title {
+        margin: 0 auto;
+    }
+    .featuring-article-date{
+        font-size: 1rem;
+    }
+    .content h3 {
+        grid-column: span 3;
+        font-size: 1.5rem;
+    }
+    .featuring-article p:nth-child(3) {
+        font-size: 1rem;
+    }
+    .wrapper {
+        display: flex;
+        gap:2em;
+        justify-content: start;
+        margin-top: 4em;
+        align-items: center;
+        
+    }
+    .aboutme {
+        padding: 0 3em;
+    }
+    .desc p:first-of-type {
+        margin-bottom: 0;
+    }
+    .desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper .img {
+        aspect-ratio: 1;
+    }
+    .aboutme-content {
+        padding: 3em 4em;
+    }
+     .aboutme-content p:first-of-type {
+        margin-bottom: 1em;
+     }
+}
